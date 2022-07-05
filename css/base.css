@@ -10,6 +10,7 @@
   --col-5: #0098D0;
   --col-6: #303F82;
   --col-7: #C3167C;
+  --col-8: #F0DBDD;
 
 
 }
@@ -59,8 +60,8 @@ button {
 .button-menu {
   position: relative;
   cursor: pointer;
-  width: 55px;
-  height: 55px;
+  width: 38px;
+  height: 38px;
   z-index: 10;
   border: none;
   background-color: transparent;
@@ -75,9 +76,10 @@ button {
 .button-menu span {
   position: absolute;
   display: block;
-  width: 30px;
+  width: 35px;
   height: 2px;
   background: var(--col-5);
+  pointer-events: none;
 
 }
 
@@ -102,19 +104,33 @@ button {
 .button-search {
   position: relative;
   cursor: pointer;
-  width: 55px;
-  height: 55px;
+  width: 38px;
+  height: 38px;
   z-index: 10;
-  border: none;
-  background-color: transparent;
+  border: 1px solid var(--col-3);
+  border-radius: 4px;
+  background-color: var(--col-3);
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s;
 
   padding: 0;
+
 }
 
 .button-search svg {
   width: 16px;
   height: 16px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.button-search:hover {
+  background-color: var(--col-6);
+}
+
+.button-search:hover svg circle,
+.button-search:hover svg path {
+  stroke: var(--col-1);
 }

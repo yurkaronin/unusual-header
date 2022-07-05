@@ -11,7 +11,7 @@
   --col-6: #303F82;
   --col-7: #C3167C;
 
-  
+
 }
 
 html {
@@ -53,4 +53,68 @@ button {
   outline-style: none;
   outline-width: 0px !important;
   outline-color: none !important;
+}
+
+/* Служебные стили  */
+.button-menu {
+  position: relative;
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  z-index: 10;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+}
+
+
+.button-menu span {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: var(--col-5);
+
+}
+
+.button-menu span:first-child {
+  transform: translateY(-8px);
+  transition: all 0.3s;
+}
+
+.button-menu span:nth-child(2) {
+  transform: translateY(0);
+  transition: all 0.1s;
+  opacity: 1;
+}
+
+.button-menu span:last-child {
+  transform: translateY(8px);
+  transition: all 0.3s;
+}
+
+
+
+.button-search {
+  position: relative;
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  z-index: 10;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+}
+
+.button-search svg {
+  width: 16px;
+  height: 16px;
 }

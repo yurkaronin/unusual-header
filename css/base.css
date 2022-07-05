@@ -1,0 +1,56 @@
+:root {
+  --ff-1: 'Open Sans', sans-serif;
+  --ff-2: 'Montserrat', sans-serif;
+
+  --col-1: #ffffff;
+  --col-2: #334257;
+  --col-3: #EEF4F7;
+  --col-4: #EBEDEF;
+
+  --col-5: #0098D0;
+  --col-6: #303F82;
+  --col-7: #C3167C;
+
+  
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: var(--ff-1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--col-2);
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+input,
+textarea,
+a,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+:focus {
+  outline-style: none;
+  outline-width: 0px !important;
+  outline-color: none !important;
+}
